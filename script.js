@@ -1,4 +1,4 @@
-let countdown = 10;
+let countdown = 3;
 let intervalId = null;
 
 function updateCountdown() {

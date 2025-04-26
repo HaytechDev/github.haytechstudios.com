@@ -1,2 +1,2 @@
-# haytechstudios.com
-Main site of Haytech Studios
+# github.haytechstudios.com
+Transfer station of Haytech Studios github organization
