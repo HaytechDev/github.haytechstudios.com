@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    background: linear-gradient(to bottom right, #d6d8db, #aeb3b8);
+    color: #333333; /* 统一深灰 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Logo部分 */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img.small-logo {
+    height: 128px;
+    width: auto;
+    margin: 0 5px;
+    object-fit: contain;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.logo-separator {
+    font-size: 1.5em;
+    margin: 0 8px;
+    color: #555555; /* 稍微亮一点的灰色 */
+}
+
+/* 网站名字 */
+.site-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 0.8em;
+    color: #333333;
+}
+
+/* 卡片部分 */
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+/* 文字样式 */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #333333;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #333333;
+}
+
+.note {
+    font-size: 0.9em;
+    opacity: 0.8;
+    color: #333333;
+}
+
+/* 链接 */
+a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+/* 加载圈 */
+.spinner {
+    margin: 20px auto;
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #333333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 按钮 */
+.button {
+    margin-top: 1.8em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333333;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 取消跳转 */
+.cancel-link {
+    margin-top: 0.8em;
+    font-size: 0.95em;
+    color: #555555;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cancel-link:hover {
+    color: #111111;
+}
